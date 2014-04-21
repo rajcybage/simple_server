@@ -3,10 +3,10 @@ require 'socket'
 module SimpleServer
   
   class Server
-     attr_accessor :port, :host, :handler
+     attr_accessor :port, :host
      
-    def initialize(port, host, handler)
-      @port, @host, @handler = port, host, handler
+    def initialize(host, port)
+      @port, @host = port, host
       @stop = false
       @socket = TCPServer.new(host, port)
     end

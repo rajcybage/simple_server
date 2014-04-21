@@ -43,4 +43,6 @@ module SimpleServer
     504  => 'Gateway Time-out', 
     505  => 'HTTP Version not supported'
   }
+  
+end
 
